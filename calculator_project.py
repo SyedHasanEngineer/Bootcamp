@@ -23,13 +23,10 @@ print("5. Addition of 3 numbers")
 print("6. Division of 3 numbers")
 
 choice = int(input("Enter your choice (1-6): "))
-if choice >= 1 and choice < 5:
-    num1 = float(input("Enter first number: "))
-    num2 = float(input("Enter second number: "))
-elif choice == 5 or choice == 6: 
+num1 = float(input("Enter first number: "))
+num2 = float(input("Enter second number: "))
+if choice == 5 or 6: 
     num3 = float(input("Enter third number: "))
-else:
-    print("Error: Invalid choice!")
 
 if choice == 1:
     result = add(num1, num2)
