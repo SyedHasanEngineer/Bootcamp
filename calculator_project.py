@@ -1,5 +1,5 @@
 from ron_addition import add_3
-from Additional_Sources import mul_3
+from Addittional_Sources import mul_3
 def add(a, b):
     return a + b
 
@@ -22,10 +22,10 @@ print("4. Division of 2 numbers")
 print("5. Addition of 3 numbers")
 print("6. Multipication of 3 numbers")
 
-choice = int(input("Enter your choice (1-5): "))
+choice = int(input("Enter your choice (1-6): "))
 num1 = float(input("Enter first number: "))
 num2 = float(input("Enter second number: "))
-if choice==5: 
+if choice==5 or choice==6: 
     num3 = float(input("Enter third number: "))
 
 if choice == 1:
