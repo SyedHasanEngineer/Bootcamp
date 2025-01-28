@@ -18,7 +18,15 @@ def div(a, b):
         return a / b #error fixed 
     else:
         return "Error: Division by zero!"
+<<<<<<< Updated upstream
 
+=======
+    return a / b
+def div3(a, b, c):
+    if b == 0:
+        return "Error: Division by zero!"
+    return a / b / c
+>>>>>>> Stashed changes
 
 print("Simple Calculator")
 print("1. Addition of 2 numbers")
@@ -46,6 +54,15 @@ elif choice == 3:
 elif choice == 3:
     result = mul(num1, num2)
 elif choice == 4:
+<<<<<<< Updated upstream
+=======
+    result = div(num1, num2)
+elif choice == 5:
+    result = div3(num1, num2, num3) #for new feature
+elif choice == 6:
+    result = add_3(num1, num2, num3)
+elif choice == 7:
+>>>>>>> Stashed changes
     result = mul_3(num1, num2, num3)
 elif choice == 5:
     result = div(num1, num2)
