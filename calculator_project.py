@@ -1,6 +1,6 @@
 from ron_addition import add_3
-from Additional_Sources import mul_3
-from new_operations import divide_three_numbers   #new line added
+from Addittional_Sources import mul_3
+#from new_operations import divide_three_numbers   #new line added
 
 def add(a, b):
     return a + b
@@ -31,7 +31,7 @@ num2 = float(input("Enter second number: "))
 num3 = None #about new feature 
 
 #only ask for num3 if needed
-if choice in == [5, 6, 7]: 
+if choice in [5, 6, 7]: 
     num3 = float(input("Enter third number: "))
 
 if choice == 1:
