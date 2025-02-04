@@ -21,11 +21,11 @@ print(connection) # SQL SERVER IT HAS CONNECTED
 csv_file = '/Users/syedimad/Desktop/Data_Batch/data_sources/airbnb/listings.csv'
 df_csv = pd.read_csv(csv_file) ##--> Extracting
 #df_csv['price'] = df_csv['price'].fillna(0) ##--> Transform
-# Update 'license' column: Replace null (NaN) values with 'Unknown'
-#df_csv.loc[df_csv['license'].isnull(), 'license'] = 'Unknown'
+Update 'license' column: Replace null (NaN) values with 'Unknown'
+df_csv.loc[df_csv['license'].isnull(), 'license'] = 'Unknown'
 
-# Update 'license' column: Replace 'City registration pending' with 'License Pending'
-#df_csv.loc[df_csv['license'] == 'City registration pending', 'license'] = 'License Pending'
+Update 'license' column: Replace 'City registration pending' with 'License Pending'
+df_csv.loc[df_csv['license'] == 'City registration pending', 'license'] = 'License Pending'
 
 print("\n Data Read into Panda's Dataframe \n")
 print("\n Ingesting into SQL Server \n")
