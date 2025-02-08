@@ -1,2 +1,2 @@
-def mul_3(d, e, f):
-    return d*e*f
+def mul_3(a, b, c):
+    return a*b*c
